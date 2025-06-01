@@ -23,7 +23,7 @@ VisionVogue - zamonaviy va premium ko'zoynaklar onlayn do'koni. Bizning maqsadim
 ### O'rnatish
 ```bash
 # Repozitoriyani klonlash
-git clone https://github.com/yourusername/visionvogue.git
+git clone https://github.com/Ahmadjonuz/glasses-shop.git
 
 # Loyiha papkasiga kirish
 cd visionvogue
@@ -69,7 +69,7 @@ VisionVogue - онлайн магазин современных и премиа
 ### Установка
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/yourusername/visionvogue.git
+git clone https://github.com/Ahmadjonuz/glasses-shop.git
 
 # Перейти в папку проекта
 cd visionvogue
@@ -115,7 +115,7 @@ VisionVogue is an online store for modern and premium eyewear. Our mission is to
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/visionvogue.git
+git clone https://github.com/Ahmadjonuz/glasses-shop.git
 
 # Navigate to project folder
 cd visionvogue

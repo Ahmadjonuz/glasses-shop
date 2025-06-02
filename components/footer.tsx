@@ -107,22 +107,22 @@ export function Footer() {
                 {tString("subscribe")}
               </Button>
             </form>
-          </div>
         </div>
+      </div>
 
         {/* Bottom */}
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-600 dark:text-gray-400">
               © 2024 VisionVogue. {tString("termsOfService")}
-            </p>
+          </p>
             <div className="flex items-center gap-4">
               <Link href="/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-600">
                 {tString("privacyPolicy")}
-              </Link>
+            </Link>
               <Link href="/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-purple-600">
                 {tString("termsOfService")}
-              </Link>
+            </Link>
             </div>
           </div>
         </div>

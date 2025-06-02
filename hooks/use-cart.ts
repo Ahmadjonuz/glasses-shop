@@ -64,15 +64,15 @@ export function useCart() {
       if (error) throw error
 
       const transformedItems = data?.map((item: any) => ({
-        id: item.id,
-        product_id: item.product_id,
-        quantity: item.quantity,
-        created_at: item.created_at,
-        updated_at: item.updated_at,
-        product: item.products,
+          id: item.id,
+          product_id: item.product_id,
+          quantity: item.quantity,
+          created_at: item.created_at,
+          updated_at: item.updated_at,
+          product: item.products,
       })) || []
 
-      setItems(transformedItems)
+        setItems(transformedItems)
     } catch (error: any) {
       console.error("Error fetching cart items:", error)
       setError(error.message || "Failed to fetch cart items")

@@ -174,7 +174,7 @@ export default function ProfilePage() {
                                 className="object-cover"
                               />
                             </div>
-                            <div className="flex-1">
+                          <div className="flex-1">
                               <p className="font-medium line-clamp-1">{like.product?.name || tString("product")}</p>
                               <p className="text-sm text-gray-600 dark:text-gray-400">
                                 {like.product?.brand || tString("brand")}
@@ -188,9 +188,9 @@ export default function ProfilePage() {
                       ))}
                       {likes.length > 3 && (
                         <Link href="/likes">
-                          <Button variant="outline" className="w-full">
+                        <Button variant="outline" className="w-full">
                             {tString("viewAllLikes")} ({likes.length})
-                          </Button>
+                        </Button>
                         </Link>
                       )}
                     </div>
@@ -229,13 +229,13 @@ export default function ProfilePage() {
                                 className="object-cover"
                               />
                             </div>
-                            <div className="flex-1">
+                          <div className="flex-1">
                               <p className="font-medium line-clamp-1">{item.product.name}</p>
-                              <p className="text-sm text-gray-600 dark:text-gray-400">
+                            <p className="text-sm text-gray-600 dark:text-gray-400">
                                 {tString("quantity")}: {item.quantity} • {(item.product.new_price * item.quantity).toLocaleString()} {tString("currency")}
-                              </p>
-                            </div>
+                            </p>
                           </div>
+                        </div>
                         </Link>
                       ))}
                       <div className="pt-3 border-t">
@@ -252,7 +252,7 @@ export default function ProfilePage() {
                           >
                             <ShoppingBag className="w-4 h-4 mr-2" />
                             {tString("viewCart")}
-                          </Button>
+                        </Button>
                         </Link>
                       </div>
                     </div>

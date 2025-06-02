@@ -86,14 +86,14 @@ export default function CartPage() {
       await refetch()
       
       // Savatcha bo'sh emasligini tekshiramiz
-      if (!items || items.length === 0) {
-        toast({
-          title: t("cartEmpty"),
-          description: t("cartEmptyDesc"),
-          variant: "destructive",
-        })
-        return
-      }
+    if (!items || items.length === 0) {
+      toast({
+        title: t("cartEmpty"),
+        description: t("cartEmptyDesc"),
+        variant: "destructive",
+      })
+      return
+    }
 
       // Checkout sahifasiga o'tamiz
       router.push("/checkout")

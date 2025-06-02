@@ -116,13 +116,13 @@ export function Header() {
               {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
             </Button>
 
-            {/* Cart */}
+                {/* Cart */}
             <Button variant="ghost" size="icon" onClick={openCart}>
               <div className="relative">
                 <ShoppingCart className="h-5 w-5" />
-                {cartItemsCount > 0 && (
+                    {cartItemsCount > 0 && (
                   <span className="absolute -top-2 -right-2 bg-purple-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                    {cartItemsCount}
+                        {cartItemsCount}
                   </span>
                 )}
               </div>
@@ -136,34 +136,34 @@ export function Header() {
                   <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
                     {likesCount}
                   </span>
-                )}
+                    )}
               </div>
-            </Button>
-
-            {/* User Menu */}
-            {user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <User className="h-5 w-5" />
                   </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
+
+                {/* User Menu */}
+            {user ? (
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" size="icon">
+                    <User className="h-5 w-5" />
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end">
                   <DropdownMenuLabel>{user.email}</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   <DropdownMenuItem onClick={() => router.push("/profile")}>
                     {tString("profile")}
-                  </DropdownMenuItem>
+                    </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => router.push("/orders")}>
                     {tString("myOrders")}
-                  </DropdownMenuItem>
+                    </DropdownMenuItem>
                   <DropdownMenuItem onClick={handleLogout}>{tString("logout")}</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+                  </DropdownMenuContent>
+                </DropdownMenu>
             ) : (
               <Button variant="ghost" size="icon" onClick={() => router.push("/login")}>
                 <LogIn className="h-5 w-5" />
-              </Button>
+                  </Button>
             )}
           </div>
         </div>

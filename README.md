@@ -166,3 +166,4 @@ npm start
 - 📧 Email: info@visionvogue.uz
 - 📞 Phone: +998 90 123 45 67
 - 📍 Address: Tashkent city, Chilanzar district, Block 19
+ 
